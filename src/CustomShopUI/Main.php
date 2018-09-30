@@ -47,19 +47,6 @@ class Main extends PluginBase
             $category["items"] = $parsedItemData;
             $this->buyCategories[$category["name"]] = $category;
         }
-        foreach ($this->getConfig()->getNested("sell-categories") as $category) {
-            if (!isset($category["name"])) continue;
-            if (!isset($category["items"])) continue;
-            $parsedItemData = [];
-            foreach ($category["items"] as $itemData) {
-                if (!isset($itemData["menu-name"])) continue;
-                if (!isset($itemData["id"])) continue;
-                if (!isset($itemData["price"])) continue;
-                $parsedItemData[$itemData["menu-name"]] = $itemData;
-            }
-            $category["items"] = $parsedItemData;
-            $this->sellCategories[$category["name"]] = $category;
-        }
     }
     /**
      * @param Player $player
