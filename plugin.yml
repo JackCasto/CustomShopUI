@@ -13,6 +13,6 @@ permissions:
         default: op
         description: "Use All ShopUI Commands"
         children:
-          shopui.command.buy:
+          shopui.command.shopui:
             default: true
             description: "Use /shop"
