@@ -18,19 +18,19 @@ class Main extends PluginBase
     /** @var array */
     {
         if (is_null($this->getServer()->getPluginManager()->getPlugin("FormAPI"))) {
-            $this->getLogger()->error("FormAPI is required, but not found.");
+            $this->getLogger()->error("FormAPI Is Required But Not Found");
             $this->getServer()->getPluginManager()->disablePlugin($this);
             return;
         }
         if (is_null($this->getServer()->getPluginManager()->getPlugin("EconomyAPI"))) {
-            $this->getLogger()->error("EconomyAPI is required, but not found.");
+            $this->getLogger()->error("EconomyAPI Is Required But Not Found");
             $this->getServer()->getPluginManager()->disablePlugin($this);
             return;
         }
         $this->saveDefaultConfig();
         $this->loadCategories();
-        $this->getServer()->getCommandMap()->register("shop", new BuyCommand("shop", $this));
-        $this->getLogger()->info(TextFormat::GREEN . "Enabled.");
+        $this->getServer()->getCommandMap()->register("shop", new ShopCommand("shop", $this));
+        $this->getLogger()->info(TextFormat::GREEN . "Enabled");
     }
     public function loadCategories()
     {
