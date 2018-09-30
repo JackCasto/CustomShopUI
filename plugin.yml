@@ -1,0 +1,18 @@
+name: CustomShopUI
+main: CustomShopUI\Main
+version: 1.0.0
+api: [3.0.0, 4.0.0]
+load: POSTWORLD
+author: BlackWebPE
+permissions:
+  shopui:
+    default: false
+    description: "Use Everything In ShopUI"
+    children:
+      shopui.command:
+        default: op
+        description: "Use All ShopUI Commands"
+        children:
+          shopui.command.buy:
+            default: true
+            description: "Use /shop"
