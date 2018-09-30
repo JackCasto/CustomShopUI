@@ -1,0 +1,57 @@
+buy-main-menu-title: "BlackWebPE ShopUI"
+buy-category-menu-title: "{CATEGORY}"
+buy-item-menu-title: "Buy {ITEM}"
+buy-item-confirm-menu-title: "Confirm Transaction"
+buy-categories:
+  - name: "Blocks"
+    image: ""
+    image-type: 1
+    items:
+      - menu-name: "Stone"
+        id: 1
+        damage: 0
+        price: 5
+        image: "textures/blocks/stone"
+        image-type: 0
+      - menu-name: "Grass"
+        id: 2
+        damage: 0
+        price: 10
+        image: "textures/blocks/grass_side_carried"
+        image-type: 0
+      - menu-name: "Dirt"
+        id: 3
+        damage: 0
+        price: 1
+        image: "textures/blocks/dirt"
+        image-type: 0
+  - name: "Food"
+    image: "https://media.forgecdn.net/avatars/64/819/636156733139658109.png"
+    image-type: 1
+    items:
+      - menu-name: "Steak"
+        id: 364
+        damage: 0
+        price: 10
+        image: "textures/items/beef_cooked"
+        image-type: 0
+      - menu-name: "Cooked Chicken"
+        id: 366
+        damage: 0
+        price: 10
+        image: "textures/items/chicken_cooked"
+        image-type: 0
+      - menu-name: "Bread"
+        id: 297
+        damage: 0
+        price: 5
+        image: "textures/items/bread"
+        image-type: 0
+  buy-item-information: "{ITEM} cost ${PRICE} each."
+  buy-item-confirmation: "Are you sure you would like to buy {COUNT}x {ITEM} for ${PRICE}."
+  not-enough-money: "You do not have the required money to buy {COUNT}x {ITEM}. You are missing ${MISSING}."
+  successfully-bought-item: "You have successfully bought {COUNT}x {ITEM} for ${PRICE}."
+  sell-item-confirmation: "Are you sure you would like to sell {COUNT}x {ITEM} for ${PRICE}."
+  missing-items: "You do not have {COUNT}x {ITEM}."
+  successfully-sold-item: "You have successfully sold {COUNT}x {ITEM} for ${PRICE}."
+  back-button: "Back"
